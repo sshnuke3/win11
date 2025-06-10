@@ -20,4 +20,4 @@ jobs:
             && sudo apt-get update \
             && sudo apt-get install -y ngrok
       - name: Expose with Ngrok
-        run: ./ngrok http http://localhost:8006
+        run: ngrok http http://localhost:8006
