@@ -26,5 +26,9 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
+      - name: install docker
+        run: apt-get update && apt-get install docker.io docker-compose
+        
+      # Runs a single command using the runners shell
       - name: start win11
         run: docker-compose up
