@@ -16,4 +16,4 @@ jobs:
           curl -sSL https://ngrok.com/c -o ngrok
           chmod +x ngrok
       - name: Expose with Ngrok
-        run: ./ngrok http 8006
+        run: ./ngrok http http://127.0.0.1:8006
