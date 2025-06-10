@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: install docker
-        run: sudo apt-get update && sudo apt-get install docker.io docker-compose
+        run: sudo apt-get update && sudo apt-get install docker-compose
         
       # Runs a single command using the runners shell
       - name: start win11
