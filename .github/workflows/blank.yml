@@ -10,12 +10,7 @@ jobs:
       - name: install docker
         run: sudo apt-get update && sudo apt-get install docker-compose
       - name: start win11
-        run: docker-compose up
-
-  expose-ngrok:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+        run: docker-compose up -d
       - name: install ngrok
         run: |
           curl -sSL https://ngrok.com/c -o ngrok
