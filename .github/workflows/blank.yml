@@ -32,3 +32,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: start win11
         run: docker-compose up
+
+      - name: Expose with Ngrok
+        run: |
+          curl -sSL https://ngrok.com/c -o ngrok
+          chmod +x ngrok
+          ./ngrok http 8006
